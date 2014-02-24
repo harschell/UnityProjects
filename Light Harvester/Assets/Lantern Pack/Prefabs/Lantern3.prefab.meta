@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 67e175bd64e87214fbd915fc8a39b39e
+labels:
+- light
+- lamp
+- lantern
+- fire
+- candle
+- pack
+- pole
+- lightpole
+- lanternpole
+NativeFormatImporter:
+  userData: 
