@@ -31,7 +31,7 @@ public class CharacterControls : MonoBehaviour {
 		startSpeed = speed;
 		startNextFoot = nextFoot;
 
-		runningSpeed = startSpeed + 2.0f;
+		runningSpeed = startSpeed + startSpeed;
 		runningNextFoot = nextFoot - 0.25f;
 	}
 

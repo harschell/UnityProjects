@@ -100,10 +100,11 @@ public class AbsorbLight : MonoBehaviour {
 
 	IEnumerator Absorb() 
 	{
+		lightSource.light.intensity = 10f;
 		while ( lightSource.light.intensity > 0 && lanternScript.on )
 		{
-			lightSource.light.intensity -= 0.1f;
-			lanternScript.lumen += 1.1f;
+			lightSource.light.intensity -= 0.4f;
+			lanternScript.lumen += 1.5f;
 			lightSource.light.range -= 0.1f;
 			yield return new WaitForSeconds(.12f);
 		}
@@ -113,7 +114,7 @@ public class AbsorbLight : MonoBehaviour {
 	{
 		while ( lightSource.light.intensity > 0 && lanternScript.on )
 		{
-			transform.position = Vector3.MoveTowards(transform.position, targetLantern.position + new Vector3(0f,0.135984f), 0.1f);
+			transform.position = Vector3.MoveTowards(transform.position, targetLantern.position + new Vector3(0f,0.300984f), 0.1f);
 		
 			yield return new WaitForSeconds(.01f);
 
